@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 10/25/2016 08:36:09 PM
+// Create Date: 10/25/2016 09:46:29 PM
 // Design Name: 
-// Module Name: ALU_1bit
+// Module Name: alu_1bit
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module ALU_1bit(
+module alu_1bit(
 
     );
 endmodule
