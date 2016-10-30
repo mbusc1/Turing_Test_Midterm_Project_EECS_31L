@@ -46,4 +46,4 @@ mux_21 arith(
             .sel(mode),
             .O(cout)
         );
- endmodule ;
+endmodule

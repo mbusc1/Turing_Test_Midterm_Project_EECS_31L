@@ -26,13 +26,13 @@ module asel1(opsel, op2, out_op2);
     output logic out_op2;
 
  
- assign out_op2 = ((opsel==3'b000)? out_op2==op2 : out_op2);
- assign out_op2 = ((opsel==3'b001)? out_op2== (!op2) : out_op2);
- assign out_op2 = ((opsel==3'b010)? out_op2==0 : out_op2);
- assign out_op2 = ((opsel==3'b011)? out_op2==(!op2) : out_op2);
- assign out_op2 = ((opsel==3'b100)? out_op2==0 : out_op2);
- assign out_op2 = ((opsel==3'b101)? out_op2==1 : out_op2);
- assign out_op2 = ((opsel==3'b110)? out_op2==op2 : out_op2);
+ assign out_op2 = ((opsel==3'b000)? out_op2 : out_op2);
+ assign out_op2 = ((opsel==3'b001)? (!op2) : out_op2);
+ assign out_op2 = ((opsel==3'b010)? 0 : out_op2);
+ assign out_op2 = ((opsel==3'b011)? (!op2) : out_op2);
+ assign out_op2 = ((opsel==3'b100)? 0 : out_op2);
+ assign out_op2 = ((opsel==3'b101)? 1 : out_op2);
+ assign out_op2 = ((opsel==3'b110)? out_op2 : out_op2);
 
  
 endmodule
