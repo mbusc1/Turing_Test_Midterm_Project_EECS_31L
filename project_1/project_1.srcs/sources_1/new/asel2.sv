@@ -1,4 +1,4 @@
-module asel1(opsel, cin, out_cin);
+module asel2(opsel, cin, out_cin);
     input logic cin;
     input logic opsel;
     output logic out_cin;
