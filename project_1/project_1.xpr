@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="14" Path="C:/Users/Matt/Documents/GitHub/Turing_Test_Midterm_Project_EECS_31L/project_1/project_1.xpr">
+<Project Version="7" Minor="14" Path="C:/Users/eddyd/Documents/GitHub/Turing_Test_Midterm_Project_EECS_31L/project_1/project_1.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="3641002f22d440489641790b3b72d1a2"/>
