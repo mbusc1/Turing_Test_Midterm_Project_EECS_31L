@@ -3,7 +3,11 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
+<<<<<<< HEAD
 <application name="pa" timeStamp="Sun Oct 30 12:58:55 2016">
+=======
+<application name="pa" timeStamp="Sun Oct 30 12:17:01 2016">
+>>>>>>> origin/master
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="e611642caf594300be69f95bab2d3023" type="ProjectID"/>
 <property name="ProjectIteration" value="1" type="ProjectIteration"/>
@@ -21,11 +25,16 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="EditDelete" value="6" type="JavaHandler"/>
 <property name="EditProperties" value="1" type="JavaHandler"/>
 <property name="OpenProject" value="4" type="JavaHandler"/>
+<<<<<<< HEAD
+=======
+<property name="RunSynthesis" value="1" type="JavaHandler"/>
+>>>>>>> origin/master
 <property name="SaveAllFiles" value="3" type="JavaHandler"/>
-<property name="SaveFileProxyHandler" value="1" type="JavaHandler"/>
+<property name="SaveFileProxyHandler" value="2" type="JavaHandler"/>
 <property name="UpdateSourceFiles" value="1" type="JavaHandler"/>
 </item>
 <item name="Gui Resources Info">
+<<<<<<< HEAD
 <property name="PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, synth_1 ; constrs_1 ; Not started ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Vivado Synthesis Defaults (Vivado Synthesis 2016" value="1" type="GuiResourceData"/>
 <property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, Non-module Files, alu_128bit.sv], 2, false" value="2" type="GuiResourceData"/>
 <property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, Non-module Files, alu_128bit.sv], 2, false, false, false, false, false, true" value="1" type="GuiResourceData"/>
@@ -148,6 +157,55 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="lsel3.sv, 85, 12" value="1" type="GuiResourceData"/>
 <property name="lsel3.sv, 91, 24" value="1" type="GuiResourceData"/>
 <property name="lsel3.sv, 92, 9" value="1" type="GuiResourceData"/>
+=======
+<property name="PAResourceAtoD.AbstractFileView_RELOAD, Reload" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_OPEN_PROJECT, Open Project..." value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Constraints], 12, true" value="6" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, Non-module Files, asel1.sv], 2, false" value="3" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, Non-module Files, asel1.sv], 2, false, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, Non-module Files, asel2.sv], 3, false" value="6" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, Non-module Files, flaggen.sv], 4, false" value="4" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, Non-module Files], 1, true" value="7" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, alu_128bit (alu_128bit.sv" value="16" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, alu_1bit (alu_1bit.sv" value="17" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, arith (arith.sv" value="15" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, carrygen (carrygen.sv" value="16" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, f_adder (fulladder.sv" value="21" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, log (log.sv" value="16" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, mux_21 (mux2to1.sv" value="11" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources], 0, true" value="41" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, Non-module Files, asel1.sv], -1, false" value="7" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, Non-module Files, asel2.sv], -1, false" value="7" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, Non-module Files, flaggen.sv], -1, false" value="9" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources], 13, true" value="30" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Synthesis, Run Synthesis], 17, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_FILE, File" value="2" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PAViews_CODE, Code" value="7" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SaveProjectUtils_SAVE, Save" value="1" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_CANCEL, Cancel" value="1" type="GuiResourceData"/>
+<property name="alu_128bit.sv, 106, 59" value="1" type="GuiResourceData"/>
+<property name="alu_1bit.sv, 111, 133" value="1" type="GuiResourceData"/>
+<property name="alu_1bit.sv, 138, 125" value="1" type="GuiResourceData"/>
+<property name="alu_1bit.sv, 187, 113" value="1" type="GuiResourceData"/>
+<property name="alu_1bit.sv, 222, 183" value="1" type="GuiResourceData"/>
+<property name="alu_1bit.sv, 239, 202" value="1" type="GuiResourceData"/>
+<property name="alu_1bit.sv, 242, 159" value="1" type="GuiResourceData"/>
+<property name="alu_1bit.sv, 252, 154" value="1" type="GuiResourceData"/>
+<property name="alu_1bit.sv, 36, 25" value="1" type="GuiResourceData"/>
+<property name="alu_1bit.sv, 76, 175" value="1" type="GuiResourceData"/>
+<property name="alu_1bit.sv, 76, 175, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="alu_1bit.sv, 82, 102" value="1" type="GuiResourceData"/>
+<property name="arith.sv, 269, 147" value="1" type="GuiResourceData"/>
+<property name="fulladder.sv, 0, 13" value="1" type="GuiResourceData"/>
+<property name="fulladder.sv, 122, 130" value="1" type="GuiResourceData"/>
+<property name="fulladder.sv, 174, 131" value="1" type="GuiResourceData"/>
+<property name="fulladder.sv, 20, 7" value="1" type="GuiResourceData"/>
+<property name="fulladder.sv, 49, 195" value="1" type="GuiResourceData"/>
+<property name="fulladder.sv, 58, 191" value="1" type="GuiResourceData"/>
+<property name="log.sv, 170, 117" value="1" type="GuiResourceData"/>
+<property name="log.sv, 62, 141" value="1" type="GuiResourceData"/>
+<property name="log.sv, 62, 141, false, false, false, false, true" value="1" type="GuiResourceData"/>
+>>>>>>> origin/master
 </item>
 <item name="Other">
 <property name="GuiMode" value="10" type="GuiMode"/>

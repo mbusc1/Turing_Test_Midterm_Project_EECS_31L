@@ -13,4 +13,4 @@ assign resultl = ((opsel == 3'b011) ? -op1 :resultl);
 assign resultl = ((opsel == 3'b101) ? cin : resultl);
 assign coutl = ((opsel == 3'b101) ? op1:0);
 
-endmodule   
+endmodule

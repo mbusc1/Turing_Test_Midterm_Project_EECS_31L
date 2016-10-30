@@ -33,4 +33,6 @@ module alu_1bit ( op1 , op2 , cin, opsel , mode , result , c_flag , z_flag , o_f
     output logic        o_flag ;
     output logic        s_flag ;
 
+
+
 endmodule ;
