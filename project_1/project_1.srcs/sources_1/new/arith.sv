@@ -1,16 +1,17 @@
-module arith (op1, op2, opsel, cin, coutl, resulta);
+module arith (op1, op2, opsel, cin, couta, resulta);
 input logic op1;
 input logic op2;
 input logic [2:0]opsel;
 input logic cin;
-output logic coutl;
+output logic couta;
 output logic resulta;
 
-assign resulta = ((opsel == 3'b000) ? op1 && op2 : resulta);
-assign resulta = ((opsel == 3'b001) ? op1 || op2 : resulta);
-assign resulta = ((opsel == 3'b010) ? op1 ^^ op2 : resulta);
-assign resulta = ((opsel == 3'b011) ? -op1 :resulta);
-assign resulta = ((opsel == 3'b101) ? cin : resulta);
-assign coutl = ((opsel == 3'b101) ? op1 : 0);
+wire net1;
+wire net2;
+
+asel1(.opsel(opsel), .op2(op2), .out_op2(net1));
+asel2(.opsel(opsel), .cin(cin), .out_cin(net2));
+
+f_adder(.a(op1), .b(net1), .c(net2), .S(resulta), .C1(couta));
 
 endmodule   
