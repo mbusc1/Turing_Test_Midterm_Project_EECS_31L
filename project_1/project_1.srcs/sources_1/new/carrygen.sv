@@ -26,18 +26,18 @@ module carrygen(opsel, mode, cin);
     output logic cin;
 
  
- assign cin = ((mode== 1 & opsel==3'b101)? cin==1 : cin==0);
- assign cin = ((mode== 0 & opsel==3'b011)? cin==1 : cin==0);
- assign cin = ((mode== 0 & opsel==3'b110)? cin==1 : cin==0);
- assign cin = ((mode== 0 & opsel==3'b100)? cin==1 : cin==0);
+ assign cin = ((mode== 1 & opsel==3'b101)? 1 : 0);
+ assign cin = ((mode== 0 & opsel==3'b011)? 1 : 0);
+ assign cin = ((mode== 0 & opsel==3'b110)? 1 : 0);
+ assign cin = ((mode== 0 & opsel==3'b100)? 1 : 0);
  
- assign cin = ((mode== 0 & opsel==3'b000)? cin==0 : cin==1);
- assign cin = ((mode== 0 & opsel==3'b001)? cin==0 : cin==1);
- assign cin = ((mode== 0 & opsel==3'b010)? cin==0 : cin==1);
- assign cin = ((mode== 0 & opsel==3'b101)? cin==0 : cin==1);
- assign cin = ((mode== 1 & opsel==3'b000)? cin==0 : cin==1);
- assign cin = ((mode== 1 & opsel==3'b001)? cin==0 : cin==1);
- assign cin = ((mode== 1 & opsel==3'b011)? cin==0 : cin==1);
+ assign cin = ((mode== 0 & opsel==3'b000)? 0 : 1);
+ assign cin = ((mode== 0 & opsel==3'b001)? 0 : 1);
+ assign cin = ((mode== 0 & opsel==3'b010)? 0 : 1);
+ assign cin = ((mode== 0 & opsel==3'b101)? 0 : 1);
+ assign cin = ((mode== 1 & opsel==3'b000)? 0 : 1);
+ assign cin = ((mode== 1 & opsel==3'b001)? 0 : 1);
+ assign cin = ((mode== 1 & opsel==3'b011)? 0 : 1);
 
  
 endmodule
