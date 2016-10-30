@@ -2,20 +2,26 @@
 # Vivado v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Sun Oct 30 10:23:16 2016
-# Process ID: 11508
+# Start of session at: Sun Oct 30 13:33:08 2016
+# Process ID: 4608
 # Current directory: C:/Users/eddyd/Documents/GitHub/Turing_Test_Midterm_Project_EECS_31L/project_1
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11840 C:\Users\eddyd\Documents\GitHub\Turing_Test_Midterm_Project_EECS_31L\project_1\project_1.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10176 C:\Users\eddyd\Documents\GitHub\Turing_Test_Midterm_Project_EECS_31L\project_1\project_1.xpr
 # Log file: C:/Users/eddyd/Documents/GitHub/Turing_Test_Midterm_Project_EECS_31L/project_1/vivado.log
 # Journal file: C:/Users/eddyd/Documents/GitHub/Turing_Test_Midterm_Project_EECS_31L/project_1\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/eddyd/Documents/GitHub/Turing_Test_Midterm_Project_EECS_31L/project_1/project_1.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Matt/Documents/GitHub/Turing_Test_Midterm_Project_EECS_31L/project_1' since last save.
 Scanning sources...
 Finished scanning sources
-WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'C:/Users/eddyd/Documents/GitHub/Turing_Test_Midterm_Project_EECS_31L/project_1/project_1.ip_user_files'.
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'C:/Users/eddyd/Documents/GitHub/Turing_Test_Midterm_Project_EECS_31L/project_1/project_1.ip_user_files', nor could it be found using path 'C:/Users/Matt/Documents/GitHub/Turing_Test_Midterm_Project_EECS_31L/project_1/project_1.ip_user_files'.
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.2/data/ip'.
-open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 749.711 ; gain = 112.285
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:05 . Memory (MB): peak = 753.898 ; gain = 111.047
 update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Oct 30 14:15:39 2016...
