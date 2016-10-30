@@ -1,9 +1,9 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
+// Company: UCI-EECS 31L
 // Engineer: 
 // 
-// Create Date: 10/25/2016 09:46:29 PM
+// Create Date: 
 // Design Name: 
 // Module Name: alu_1bit
 // Project Name: 
@@ -20,7 +20,17 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module alu_1bit(
+module alu_1bit ( op1 , op2 , cin, opsel , mode , result , c_flag , z_flag , o_flag , s_flag );
 
-    );
-endmodule
+    input  logic        op1 ;
+    input  logic        op2 ;
+    input  logic        cin ;
+    input  logic [ 2:0] opsel ;
+    input  logic        mode ;
+    output logic        result ;
+    output logic        c_flag ;
+    output logic        z_flag ;
+    output logic        o_flag ;
+    output logic        s_flag ;
+
+endmodule ;
