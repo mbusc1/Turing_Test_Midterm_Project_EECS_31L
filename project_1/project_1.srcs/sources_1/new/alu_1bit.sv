@@ -20,19 +20,30 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module alu_1bit ( op1 , op2 , cin, opsel , mode , result , c_flag , z_flag , o_flag , s_flag );
+module alu_1bit ( op1 , op2 , cin, opsel , mode , resulta, resultl , couta, coutl);
 
     input  logic        op1 ;
     input  logic        op2 ;
     input  logic        cin ;
     input  logic [ 2:0] opsel ;
     input  logic        mode ;
-    output logic        result ;
-    output logic        c_flag ;
-    output logic        z_flag ;
-    output logic        o_flag ;
-    output logic        s_flag ;
-
-
-
-endmodule ;
+    output logic        resulta ;
+    output logic        resultl ;
+    output logic        couta ;
+    output logic        coutl ;
+    
+arith(.op1(op1), .op2(op2), .opsel(opsel[2:0]), .cin(cin), .couta(couta), .resulta(resulta));
+log(.op1(op1), .op2(op2), .opsel(opsel[2:0]), .cin(cin), .coutl(coutl), .resultl(resultl));
+mux_21 arith(
+        .a(resultl),
+        .b(resulta),
+        .sel(mode),
+        .O(result)
+    );
+ mux_21 l1(
+            .a(couta),
+            .b(coutl),
+            .sel(mode),
+            .O(cout)
+        );
+ endmodule ;
