@@ -15,6 +15,7 @@ syntax error: A[127:0] vs. [127:0]B
 	---A[127:0]
 128bit ALU: carry was an output 
 	--- turned carry into an input
-Multiple Drivers errors 
- 	--- carrygen 
+Multiple Concurrent Drivers
+	--- carrygen -- changed all else ends to the same number 
+		-- if one if failed, the value changed and that value was passed onto the next if causing problems
 	--- asel1 
