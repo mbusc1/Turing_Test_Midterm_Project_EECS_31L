@@ -1,17 +1,17 @@
 module flaggen(mode, op1, op2, carry, result, C_flag, Z_flag, S_flag, O_flag);
+    parameter DWIDTH = 128;
     input mode; 
-    input op1[127:0]; 
-    input op2[127:0];
-    input carry;
-    input result[127:0];
+    input [DWIDTH-1:0]op1; 
+    input [DWIDTH-1:0]op2;
+    input [DWIDTH-1:0]carry;
+    input [DWIDTH-1:0]result;
     output logic C_flag;
     output logic Z_flag; 
     output logic S_flag;
     output logic O_flag;
     wire zero; 
-    parameter DWIDTH = 128;
     //Code Starts Here
-    assign C_flag = carry;
+    assign C_flag = carry[DWIDTH];
     genvar i; 
     generate
         for (i = 0; i < (DWIDTH-1); i=i+1) begin: g
