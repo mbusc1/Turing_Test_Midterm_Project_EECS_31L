@@ -34,8 +34,8 @@ module alu_1bit ( cout, result, op1 , op2 , cin, opsel , mode , resulta, resultl
     output logic        result;
     output logic        cout;
     
-arith ar1(.op1(op1), .op2(op2), .opsel(opsel[2:0]), .cin(cin), .couta(couta), .resulta(resulta));
-log lo1(.op1(op1), .op2(op2), .opsel(opsel[2:0]), .cin(cin), .coutl(coutl), .resultl(resultl));
+arith(.op1(op1), .op2(op2), .opsel(opsel[2:0]), .cin(cin), .couta(couta), .resulta(resulta));
+log(.op1(op1), .op2(op2), .opsel(opsel[2:0]), .cin(cin), .coutl(coutl), .resultl(resultl));
 mux2to1 arith(
         .a(resultl),
         .b(resulta),

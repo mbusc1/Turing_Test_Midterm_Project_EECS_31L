@@ -3,19 +3,19 @@
 <!--                                                         -->
 <!-- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="14" Path="C:/Users/Matt/Documents/GitHub/Turing_Test_Midterm_Project_EECS_31L/project_1/project_1.xpr">
+<Project Version="7" Minor="14" Path="C:/Users/marissa/Documents/GitHub/Turing_Test_Midterm_Project_EECS_31L/project_1/project_1.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="3641002f22d440489641790b3b72d1a2"/>
     <Option Name="Part" Val="xc7a35tcpg236-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
-    <Option Name="CompiledLibDirModelSim" Val="$PPRDIR/../../../../../marissa/Documents/GitHub/Turing_Test_Midterm_Project_EECS_31L/project_1/project_1.cache/compile_simlib/modelsim"/>
-    <Option Name="CompiledLibDirQuesta" Val="$PPRDIR/../../../../../marissa/Documents/GitHub/Turing_Test_Midterm_Project_EECS_31L/project_1/project_1.cache/compile_simlib/questa"/>
-    <Option Name="CompiledLibDirIES" Val="$PPRDIR/../../../../../marissa/Documents/GitHub/Turing_Test_Midterm_Project_EECS_31L/project_1/project_1.cache/compile_simlib/ies"/>
-    <Option Name="CompiledLibDirVCS" Val="$PPRDIR/../../../../../marissa/Documents/GitHub/Turing_Test_Midterm_Project_EECS_31L/project_1/project_1.cache/compile_simlib/vcs"/>
-    <Option Name="CompiledLibDirRiviera" Val="$PPRDIR/../../../../../marissa/Documents/GitHub/Turing_Test_Midterm_Project_EECS_31L/project_1/project_1.cache/compile_simlib/riviera"/>
-    <Option Name="CompiledLibDirActivehdl" Val="$PPRDIR/../../../../../marissa/Documents/GitHub/Turing_Test_Midterm_Project_EECS_31L/project_1/project_1.cache/compile_simlib/activehdl"/>
+    <Option Name="CompiledLibDirModelSim" Val="C:/Users/marissa/Documents/GitHub/Turing_Test_Midterm_Project_EECS_31L/project_1/project_1.cache/compile_simlib/modelsim"/>
+    <Option Name="CompiledLibDirQuesta" Val="C:/Users/marissa/Documents/GitHub/Turing_Test_Midterm_Project_EECS_31L/project_1/project_1.cache/compile_simlib/questa"/>
+    <Option Name="CompiledLibDirIES" Val="C:/Users/marissa/Documents/GitHub/Turing_Test_Midterm_Project_EECS_31L/project_1/project_1.cache/compile_simlib/ies"/>
+    <Option Name="CompiledLibDirVCS" Val="C:/Users/marissa/Documents/GitHub/Turing_Test_Midterm_Project_EECS_31L/project_1/project_1.cache/compile_simlib/vcs"/>
+    <Option Name="CompiledLibDirRiviera" Val="C:/Users/marissa/Documents/GitHub/Turing_Test_Midterm_Project_EECS_31L/project_1/project_1.cache/compile_simlib/riviera"/>
+    <Option Name="CompiledLibDirActivehdl" Val="C:/Users/marissa/Documents/GitHub/Turing_Test_Midterm_Project_EECS_31L/project_1/project_1.cache/compile_simlib/activehdl"/>
     <Option Name="BoardPart" Val=""/>
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
@@ -24,7 +24,7 @@
     <Option Name="IPUserFilesDir" Val="$PPRDIR/project_1.ip_user_files"/>
     <Option Name="IPStaticSourceDir" Val="$PPRDIR/project_1.ip_user_files/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
-    <Option Name="WTXSimLaunchSim" Val="28"/>
+    <Option Name="WTXSimLaunchSim" Val="0"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -84,14 +84,14 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/carrygen.sv">
+      <File Path="$PSRCDIR/sources_1/new/flaggen.sv">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/flaggen.sv">
+      <File Path="$PSRCDIR/sources_1/new/carrygen.sv">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>

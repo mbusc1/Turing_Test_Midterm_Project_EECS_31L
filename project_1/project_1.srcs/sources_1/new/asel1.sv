@@ -22,18 +22,17 @@
 // mode 1 101 pass carry in as 1 
 module asel1(opsel, op2, out_op2);
     input logic op2;
-    input logic [2:0]opsel;
+    input logic opsel;
     output logic out_op2;
 
- assign out_op2 = 0;
  
- assign out_op2 = ((opsel==3'b000 && op2 == 1)? 1 : 0);
- assign out_op2 = ((opsel==3'b001 && op2 != 1)? 1 : 0);
- assign out_op2 = ((opsel==3'b010 && op2 == 1)? 0 : 0);
- assign out_op2 = ((opsel==3'b011 && op2 != 1)? 1 : 0);
- assign out_op2 = ((opsel==3'b100 && op2 == 1)? 0 : 0);
- assign out_op2 = ((opsel==3'b101 && op2 == 1 || op2 !=1)? 1 : 0);
- assign out_op2 = ((opsel==3'b110 && op2 == 1)? 1 : 0);
+ assign out_op2 = ((opsel==3'b000)? op2 : op2);
+ assign out_op2 = ((opsel==3'b001)? (!op2) : op2);
+ assign out_op2 = ((opsel==3'b010)? 0 : op2);
+ assign out_op2 = ((opsel==3'b011)? (!op2) : op2);
+ assign out_op2 = ((opsel==3'b100)? 0 : op2);
+ assign out_op2 = ((opsel==3'b101)? 1 : op2);
+ assign out_op2 = ((opsel==3'b110)? op2 : op2);
 
  
 endmodule
