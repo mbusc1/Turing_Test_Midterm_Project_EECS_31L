@@ -1,3 +1,4 @@
+`timescale 1ns / 1ps
 module f_adder(
     input logic a,
     input logic b,

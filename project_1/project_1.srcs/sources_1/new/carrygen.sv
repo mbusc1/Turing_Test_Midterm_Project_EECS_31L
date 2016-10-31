@@ -20,19 +20,16 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 // mode 1 101 pass carry in as 1 
-module carrygen(opsel, mode, ci);
-    input logic [2:0]opsel;
-    input logic mode;
-    output logic ci;
-
- assign ci = 0; 
-
-
- assign ci = ((mode== 0 && opsel==3'b011)? 1 : 0);
- assign ci = ((mode== 0 && opsel==3'b110)? 1 : 0);
- assign ci = ((mode== 0 && opsel==3'b100)? 1 : 0);
+module carrygen(
+    input logic [2:0]opsel,
+    input logic mode,
+    output logic cin
+);
  
- assign ci = ((mode== 1 && opsel==3'b101)? 1 : 0);
+ assign cin = (({mode,opsel}==4'b0011)? 1'b1 : 
+ ({mode,opsel}==4'b0110)? 1'b1 : 
+ ({mode,opsel}==4'b0100)? 1'b1 : 
+ ({mode,opsel}==4'b1101)? 1'b1 : 1'b0);
 
  
 endmodule

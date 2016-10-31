@@ -1,3 +1,4 @@
+`timescale 1ns / 1ps
 module flaggen(mode, op1, op2, carry, result, C_flag, Z_flag, S_flag, O_flag);
     parameter DWIDTH = 128;
     input mode; 
@@ -19,8 +20,8 @@ module flaggen(mode, op1, op2, carry, result, C_flag, Z_flag, S_flag, O_flag);
     endgenerate     
     assign Z_flag = ((zero == 0)? 1 : 0); 
     assign S_flag = ((result[127] == 0)? 1 : 0);
-    assign O_flag = ((mode == 0 && result[127] == 1 && op1[127] == 0 && op2[127]== 0)? 1 : 0);
-    assign O_flag = ((mode == 0 && result[127] == 0 && op1[127] == 1 && op2[127]== 1)? 1 : 0);
+    assign O_flag = ((mode == 0 && result[127] == 1 && op1[127] == 0 && op2[127]== 0)? 1 : 
+    (mode == 0 && result[127] == 0 && op1[127] == 1 && op2[127]== 1)? 1 : 0);
 
 endmodule
 

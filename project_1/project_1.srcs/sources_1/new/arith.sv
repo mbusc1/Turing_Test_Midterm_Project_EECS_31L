@@ -1,3 +1,4 @@
+`timescale 1ns / 1ps
 module arith (op1, op2, opsel, cin, couta, resulta);
 input logic op1;
 input logic op2;

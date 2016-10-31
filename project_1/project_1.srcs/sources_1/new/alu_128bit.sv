@@ -1,4 +1,5 @@
-module alu_128bit ( op1 , op2 , opsel , mode , result , c_flag , z_flag , o_flag , s_flag, carry);
+`timescale 1ns / 1ps
+module alu_128bit ( op1 , op2 , opsel , mode , result , c_flag , z_flag , o_flag , s_flag, carry, resulta, resultl , couta, coutl);
 parameter DWIDTH = 128;
 input logic [ DWIDTH -1:0] op1 ;
 input logic [ DWIDTH -1:0] op2 ;
@@ -11,10 +12,13 @@ output logic o_flag ;
 output logic s_flag ;
 output logic [DWIDTH:0]carry;
 wire cin;
+output logic resulta;
+output logic resultl;
+output logic couta;
+output logic coutl;
+carrygen c1(.opsel(opsel[2:0]), .mode(mode), .cin(cin));
 
-carrygen c1(.opsel(opsel[2:0]), .mode(mode), .ci(cin));
-
-alu_1bit a1(.op1(op1[0]), .op2(op2[0]), .opsel(opsel[2:0]), .cin(ci), .mode(mode), .result(result[0]), .cout(carry[1]));
+alu_1bit a1(.op1(op1[0]), .op2(op2[0]), .opsel(opsel[2:0]), .cin(cin), .mode(mode), .result(result[0]), .cout(carry[1]), .resulta(resulta), .resultl(resultl) , .couta(couta), .coutl(coutl));
 
 genvar i;
 generate

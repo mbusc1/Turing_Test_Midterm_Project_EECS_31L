@@ -24,16 +24,14 @@ module asel1(opsel, op2, out_op2);
     input logic op2;
     input logic [2:0]opsel;
     output logic out_op2;
-
- assign out_op2 = 0;
  
- assign out_op2 = ((opsel==3'b000 && op2 == 1)? 1 : 0);
- assign out_op2 = ((opsel==3'b001 && op2 != 1)? 1 : 0);
- assign out_op2 = ((opsel==3'b010 && op2 == 1)? 0 : 0);
- assign out_op2 = ((opsel==3'b011 && op2 != 1)? 1 : 0);
- assign out_op2 = ((opsel==3'b100 && op2 == 1)? 0 : 0);
- assign out_op2 = ((opsel==3'b101 && op2 == 1 || op2 !=1)? 1 : 0);
- assign out_op2 = ((opsel==3'b110 && op2 == 1)? 1 : 0);
+ assign out_op2 = ((opsel==3'b000 && op2 == 1)? 1 :
+ (opsel==3'b001 && op2 != 1)? 1'b1 : 
+ (opsel==3'b010 && op2 == 1)? 1'b0 : 
+ (opsel==3'b011 && op2 != 1)? 1'b1 : 
+ (opsel==3'b100 && op2 == 1)? 1'b0 : 
+ (opsel==3'b101 && op2 == 1 || op2 !=1)? 1'b1 :
+ (opsel==3'b110 && op2 == 1)? 1'b1 : 1'b0);
 
  
 endmodule
