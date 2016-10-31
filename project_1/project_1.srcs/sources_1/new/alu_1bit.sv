@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module alu_1bit ( op1 , op2 , cin, opsel , mode , resulta, resultl , couta, coutl);
+module alu_1bit ( cout, result, op1 , op2 , cin, opsel , mode , resulta, resultl , couta, coutl);
 
     input  logic        op1 ;
     input  logic        op2 ;
@@ -31,16 +31,18 @@ module alu_1bit ( op1 , op2 , cin, opsel , mode , resulta, resultl , couta, cout
     output logic        resultl ;
     output logic        couta ;
     output logic        coutl ;
+    output logic        result;
+    output logic        cout;
     
 arith(.op1(op1), .op2(op2), .opsel(opsel[2:0]), .cin(cin), .couta(couta), .resulta(resulta));
 log(.op1(op1), .op2(op2), .opsel(opsel[2:0]), .cin(cin), .coutl(coutl), .resultl(resultl));
-mux_21 arith(
+mux2to1 arith(
         .a(resultl),
         .b(resulta),
         .sel(mode),
         .O(result)
     );
- mux_21 l1(
+ mux2to1 l1(
             .a(couta),
             .b(coutl),
             .sel(mode),
