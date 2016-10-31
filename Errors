@@ -1,0 +1,20 @@
+Errors encountered
+-------------------------------------------------
+Syntax errors in carrygen, flaggen, asel1 and asel2 
+	--- was using equivalence operator (==)  in if statement to assign 
+Not using "." when calling modules
+Could not check a range in a conditional statement 
+	--- fixed by creating a generate statement to parse through the range
+	--- used a local variable to eventually assign 
+Referenced mux incorrectly 
+	--- referenced mux_21 rather than the correct, mux2to1
+Result and cout are undefined in 1bit ALU 
+	--- defined
+sending flaggen carryout rather than carry[DWIDTH]
+syntax error: A[127:0] vs. [127:0]B
+	---A[127:0]
+128bit ALU: carry was an output 
+	--- turned carry into an input
+Multiple Drivers errors 
+ 	--- carrygen 
+	--- asel1 
